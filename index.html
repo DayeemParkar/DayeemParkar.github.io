@@ -169,12 +169,8 @@
 
     <script type="text/javascript">
       let currSection = "about";
-
-      history.scrollRestoration = "manual";  //move to top on reload
-      window.onbeforeunload = function () {
-        window.scrollTop(0);
-      }
       document.getElementById("abouta").style.color = "white";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
 
       function changeSection(currS) {  //currS eg:abouta
         let len = currS.length;
