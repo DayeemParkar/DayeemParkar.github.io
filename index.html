@@ -16,7 +16,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="external/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="external/devicons/css/devicons.css" rel="stylesheet">
-    <link href="external/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
@@ -34,16 +33,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about" id="abouta" onclick="changeSection('abouta')">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#education" id="educationa" onclick="changeSection('educationa')">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills" id="skillsa" onclick="changeSection('skillsa')">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#achievements">Achievements &amp; Participations</a>
+            <a class="nav-link" href="#achievements" id="achievementsa" onclick="changeSection('achievementsa')">
+              Achievements &amp; Participations</a>
           </li>
         </ul>
       </div>
@@ -51,7 +51,7 @@
 
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about" onmouseenter="checkSection('about')">
         <div class="my-auto">
           <h1 class="mb-0">Dayeem
             <span class="text-primary">Parkar</span>
@@ -84,7 +84,7 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education" onmouseenter="checkSection('education')">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
@@ -116,7 +116,7 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills" onmouseenter="checkSection('skills')">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
 
@@ -154,7 +154,7 @@
           </ul>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements" onmouseenter="checkSection('achievements')">
         <div class="my-auto">
           <h2 class="mb-5">Achievements &amp; Participations</h2>
           <p>3 star coder at <a href="https://www.codechef.com/users/dayeem" target="_blank">CodeChef</a><br>
@@ -167,7 +167,31 @@
 
     </div>
 
-    <script src="js/resume.js"></script>
+    <script type="text/javascript">
+      let currSection = "about";
+
+      history.scrollRestoration = "manual";  //move to top on reload
+      window.onbeforeunload = function () {
+        window.scrollTop(0);
+      }
+      document.getElementById("abouta").style.color = "white";
+
+      function changeSection(currS) {  //currS eg:abouta
+        let len = currS.length;
+        if (currSection != currS.substring(0, len - 1)) {
+          document.getElementById(currS).style.color = "white";
+          document.getElementById(currSection + "a").style.color = "rgba(255, 255, 255, 0.5)";
+          currSection = currS.substring(0, len - 1);
+        }
+      }
+      function checkSection(currS) {  //currS eg:about
+        if (currSection != currS) {
+          document.getElementById(currS + "a").style.color = "white";
+          document.getElementById(currSection + "a").style.color = "rgba(255, 255, 255, 0.5)";
+          currSection = currS;
+        }
+      }
+    </script>
 
   </body>
 
