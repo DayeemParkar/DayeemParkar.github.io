@@ -30,7 +30,7 @@ body {
     text-transform: uppercase;
     font-weight: 500;
     font-family: 'Saira Extra Condensed', serif;
-    font-size: 1.35rem; }
+    font-size: 1.5rem; }
   
   .list-social-icons a {
     color: #495057; }
@@ -40,7 +40,7 @@ body {
       font-size: 1.75rem; }
   
   .list-icons {
-    font-size: 3rem; }
+    font-size: 1.35rem; }
     .list-icons .list-inline-item i:hover {
       color: #BD5D38; }
   
@@ -77,11 +77,13 @@ body {
           width: 100%; }
           #sideNav .navbar-collapse .navbar-nav .nav-item {
             display: block; }
-            #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+            #sideNav .navbar-
+             .navbar-nav .nav-item .nav-link {
               display: block; } }
   
   section.resume-section {
     border-bottom: 1px solid #dee2e6;
+    background-color: #f3f3f3;
     padding-top: 5rem !important;
     padding-bottom: 5rem !important; }
     section.resume-section .resume-item .resume-date {
@@ -99,7 +101,7 @@ body {
       padding-bottom: 3rem !important; } }
   
   .bg-primary {
-    background-color: #BD5D38 !important; }
+    background-color: #BD5D38; }
   
   .text-primary {
     color: #BD5D38 !important; }
