@@ -15,7 +15,7 @@
     <!-- Custom fonts and icons -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="external/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="external/devicons/css/devicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
@@ -24,25 +24,28 @@
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand" href="#page-top">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Dayeem Parkar</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
       </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#about" id="abouta" onclick="changeSection('abouta')">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about" id="abouta">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education" id="educationa" onclick="changeSection('educationa')">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#education" id="educationa">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills" id="skillsa" onclick="changeSection('skillsa')">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills" id="skillsa">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#achievements" id="achievementsa" onclick="changeSection('achievementsa')">
+            <a class="nav-link js-scroll-trigger" href="#achievements" id="achievementsa">
               Achievements &amp; Participations</a>
           </li>
         </ul>
@@ -51,7 +54,7 @@
 
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about" onmouseenter="checkSection('about')">
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Dayeem
             <span class="text-primary">Parkar</span>
@@ -60,9 +63,9 @@
             <a href="mailto:dayeem59@gmail.com">dayeem59@gmail.com</a><br>
           </div>
           <p class="mb-5">CSE Junior at Vellore Institute of Technology.<br>
-            Forward-looking software developer fluent in C, Python, HTML and JavaScript, among others.
+            Forward-looking software developer fluent in C, C++, Python and JavaScript, among others.
             Skilled at reading and writing code using viable inputs and outputs after assessment of pre- and post-conditions.
-            Confident in problem-solving to overcome glitches with creative solutions that are strategically designed to last long-term.</p>
+            Confident in problem-solving to overcome issues with creative solutions that are strategically designed to last long-term.</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/dayeem-parkar" target="_blank">
@@ -84,7 +87,7 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education" onmouseenter="checkSection('education')">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
@@ -116,78 +119,79 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills" onmouseenter="checkSection('skills')">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
           <h2 class="mb-5">Skills</h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-python"></i>
+          <div class="subheading mb-3">Programming Languages, Frameworks &amp; Tools</div>
+          <ul class="list-icons">
+            <li>
+              C <i class="devicon-c-plain"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-java"></i>
+            <li>
+              C++ <i class="devicon-cplusplus-plain"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-php"></i>
+            <li>
+              Python <i class="devicons devicon-python-plain"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-mysql"></i>
+            <li>
+              Java <i class="devicons devicon-java-plain"></i>
             </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
+            <li>
+              JavaScript <i class="devicons devicon-javascript-plain"></i>
+            </li>
+            <li>
+              JQuery <i class="devicons devicon-jquery-plain"></i>
+            </li>
+            <li>
+              PHP <i class="devicons devicon-php-plain"></i>
+            </li>
+            <li>
+              MySQL <i class="devicons devicon-mysql-plain"></i>
+            </li>
+            <li>
+              HTML <i class="devicons devicon-html5-plain"></i>
+            </li>
+            <li>
+              CSS <i class="devicons devicon-css3-plain"></i>
+            </li>
+            <li>
+              Bootstrap <i class="devicons devicon-bootstrap-plain"></i>
             </li>
           </ul>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-          </ul>
+        </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements" onmouseenter="checkSection('achievements')">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements">
         <div class="my-auto">
           <h2 class="mb-5">Achievements &amp; Participations</h2>
-          <p>3 star coder at <a href="https://www.codechef.com/users/dayeem" target="_blank">CodeChef</a><br>
-            5 star coder at <a href="https://www.hackerrank.com/dayeem59" target="_blank">HackerRank</a> for C, Python and Java<br>
-            Member of Indian Society Technical Education (ISTE) Chapter at Vellore Institute of Technology from July 2020 – June 2021<br>
-            98.72 percentile in JEE Mains 2019<br>
-            AIR 14076 in JEE Advanced 2019</p>
+            <ul>
+              <li>
+                3 star coder at <a href="https://www.codechef.com/users/dayeem" target="_blank">CodeChef</a>
+              </li>
+              <li>
+                5 star coder at <a href="https://www.hackerrank.com/dayeem59" target="_blank">HackerRank</a> for C, Python and Java
+              </li>
+              <li>
+                Member of Indian Society Technical Education (ISTE) Chapter at Vellore Institute of Technology from July 2020 – June 2021<br>
+              </li>
+              <li>
+                98.72 percentile in JEE Mains 2019<br>
+              </li>
+              <li>
+                AIR 14076 in JEE Advanced 2019
+              </li>
+            </ul>
         </div>
       </section>
 
     </div>
 
-    <script type="text/javascript">
-      let currSection = "about";
-      document.getElementById("abouta").style.color = "white";
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    <script src="external/jquery/jquery.js"></script>
+    <script src="external/bootstrap/bootstrap.bundle.js"></script>
+    <script src="external/jquery/jquery.easing.js"></script>
 
-      function changeSection(currS) {  //currS eg:abouta
-        let len = currS.length;
-        if (currSection != currS.substring(0, len - 1)) {
-          document.getElementById(currS).style.color = "white";
-          document.getElementById(currSection + "a").style.color = "rgba(255, 255, 255, 0.5)";
-          currSection = currS.substring(0, len - 1);
-        }
-      }
-      function checkSection(currS) {  //currS eg:about
-        if (currSection != currS) {
-          document.getElementById(currS + "a").style.color = "white";
-          document.getElementById(currSection + "a").style.color = "rgba(255, 255, 255, 0.5)";
-          currSection = currS;
-        }
-      }
-    </script>
+    <script src="portfMainJS.js"></script>
 
   </body>
 
