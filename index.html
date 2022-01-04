@@ -16,8 +16,22 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="external/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <style>
+      .mySlides {
+        display:none
+      }
+      .w3-left, .w3-right, .w3-badge {
+        cursor:pointer
+      }
+      .w3-badge {
+        height:13px;
+        width:13px;
+        padding:0
+      }
+    </style>
 
   </head>
 
@@ -47,6 +61,10 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#achievements" id="achievementsa">
               Achievements &amp; Participations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects" id="projectsa">
+              Projects</a>
           </li>
         </ul>
       </div>
@@ -185,6 +203,28 @@
         </div>
       </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+          <div class="w3-content w3-display-container" style="max-width:60%; max-height:80%;">
+            <a href="http://slc.dayeemp.in/" target="_blank">
+              <img class="mySlides w3-animate-top" src="img/slc.PNG" style="width:100%;"></a>
+            <a href="https://github.com/DayeemParkar/CSE3501ProjectDataLeakageDetection" target="_blank">
+              <img class="mySlides w3-animate-top" src="img/dataleakage.PNG" style="width:100%;"></a>
+            <a href="https://github.com/DayeemParkar/Image-Stegonagraphy-Using-an-Edge-Based-Embedding-Technique" target="_blank">
+              <img class="mySlides w3-animate-top" src="img/imgsteg.PNG" style="width:100%;"></a>
+            <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <div class="w3-left w3-black" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="w3-right w3-black" onclick="plusDivs(1)">&#10095;</div>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
+          <div id="projectTitles" class="w3-center subheading mb-3"></div>
+        </div>
+      </section>
+
     </div>
 
     <script src="external/jquery/jquery.js"></script>
@@ -192,6 +232,38 @@
     <script src="external/jquery/jquery.easing.js"></script>
 
     <script src="portfMainJS.js"></script>
+    <script>
+      var slideIndex = 1;
+      var titles = ["<a href='http://slc.dayeemp.in/'>Student Learning Companion</a>", 
+      "<a href='https://github.com/DayeemParkar/CSE3501ProjectDataLeakageDetection'>Data Leakage Detection Using A Probability Based Approach</a>", 
+      "<a href='https://github.com/DayeemParkar/Image-Stegonagraphy-Using-an-Edge-Based-Embedding-Technique'>Image Stegonagraphy Using an Edge Based Embedding Technique</a>"]
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function currentDiv(n) {
+        showDivs(slideIndex = n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-black", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " w3-black";
+        document.getElementById("projectTitles").innerHTML = titles[slideIndex - 1];
+      }
+    </script>
 
   </body>
 
