@@ -14,7 +14,7 @@
 
     <!-- Custom fonts and icons -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="external/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -30,6 +30,10 @@
         height:13px;
         width:13px;
         padding:0
+      }
+      .ic {
+        font-size:3em;
+        line-height:.75em;
       }
     </style>
 
@@ -66,6 +70,15 @@
             <a class="nav-link js-scroll-trigger" href="#projects" id="projectsa">
               Projects</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contacts" id="contactsa">
+              Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" 
+            href="https://drive.google.com/file/d/1MvCrWoAmCCwLbzY-PGniJy4OHGxM8qoK/view?usp=sharing" target="_blank" id="resumea">
+              Resume</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -74,10 +87,10 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Dayeem
+          <h1 class="mb-0 w3-animate-left">Dayeem
             <span class="text-primary">Parkar</span>
           </h1>
-          <div class="subheading mb-5">Mumbai, India · (+91) 9702785293 ·
+          <div class="subheading mb-5 w3-animate-left">Mumbai, India · (+91) 9702785293 ·
             <a href="mailto:dayeem59@gmail.com">dayeem59@gmail.com</a><br>
           </div>
           <p class="mb-5">CSE Junior at Vellore Institute of Technology.<br>
@@ -87,19 +100,31 @@
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a href="https://www.linkedin.com/in/dayeem-parkar" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                <span class="fa-stack ic">
+                    <i class="iconify" data-icon="akar-icons:linkedin-fill"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
               <a href="https://github.com/DayeemParkar" target="_blank">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                <span class="fa-stack ic">
+                    <i class="iconify" data-icon="akar-icons:github-fill"></i>
                 </span>
               </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.codechef.com/users/dayeem" target="_blank">
+                    <span class="fa-stack ic">
+                        <i class="iconify" data-icon="simple-icons:codechef"></i>
+                    </span>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.hackerrank.com/dayeem59" target="_blank">
+                  <span class="fa-stack ic">
+                      <i class="iconify" data-icon="cib:hackerrank"></i>
+                  </span>
+                </a>
             </li>
           </ul>
         </div>
@@ -107,7 +132,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="text-primary mb-5">Education</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -139,42 +164,42 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+          <h2 class="text-primary mb-5">Skills</h2>
 
           <div class="subheading mb-3">Programming Languages, Frameworks &amp; Tools</div>
           <ul class="list-icons">
             <li>
-              C <i class="devicon-c-plain"></i>
+              <i class="devicon-c-plain"></i> C
             </li>
             <li>
-              C++ <i class="devicon-cplusplus-plain"></i>
+              <i class="devicon-cplusplus-plain"></i> C++
             </li>
             <li>
-              Python <i class="devicons devicon-python-plain"></i>
+              <i class="devicons devicon-python-plain"></i> Python
             </li>
             <li>
-              Java <i class="devicons devicon-java-plain"></i>
+              <i class="devicons devicon-java-plain"></i> Java
             </li>
             <li>
-              JavaScript <i class="devicons devicon-javascript-plain"></i>
+              <i class="devicons devicon-javascript-plain"></i> JavaScript
             </li>
             <li>
-              JQuery <i class="devicons devicon-jquery-plain"></i>
+              <i class="devicons devicon-jquery-plain"></i> JQuery
             </li>
             <li>
-              PHP <i class="devicons devicon-php-plain"></i>
+              <i class="devicons devicon-php-plain"></i> PHP
             </li>
             <li>
-              MySQL <i class="devicons devicon-mysql-plain"></i>
+              <i class="devicons devicon-mysql-plain"></i> MySQL
             </li>
             <li>
-              HTML <i class="devicons devicon-html5-plain"></i>
+              <i class="devicons devicon-html5-plain"></i> HTML
             </li>
             <li>
-              CSS <i class="devicons devicon-css3-plain"></i>
+              <i class="devicons devicon-css3-plain"></i> CSS
             </li>
             <li>
-              Bootstrap <i class="devicons devicon-bootstrap-plain"></i>
+              <i class="devicons devicon-bootstrap-plain"></i> Bootstrap
             </li>
           </ul>
         </div>
@@ -182,7 +207,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="achievements">
         <div class="my-auto">
-          <h2 class="mb-5">Achievements &amp; Participations</h2>
+          <h2 class="text-primary mb-5">Achievements &amp; Participations</h2>
             <ul>
               <li>
                 3 star coder at <a href="https://www.codechef.com/users/dayeem" target="_blank">CodeChef</a>
@@ -205,8 +230,8 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
-          <div class="w3-content w3-display-container" style="max-width:60%; max-height:80%;">
+          <h2 class="text-primary mb-5">Projects</h2>
+          <div class="w3-content w3-display-container" style="max-width:100%; max-height:80%;">
             <a href="http://slc.dayeemp.in/" target="_blank">
               <img class="mySlides w3-animate-top" src="img/slc.PNG" style="width:100%;"></a>
             <a href="https://github.com/DayeemParkar/CSE3501ProjectDataLeakageDetection" target="_blank">
@@ -225,11 +250,54 @@
         </div>
       </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contacts">
+        <div class="my-auto">
+          <h2 class="text-primary mb-5">Contact Me</h2>
+
+          <form class="gform" method="POST" data-email="dayeem59@gmail.com"
+          action="https://script.google.com/macros/s/AKfycbzrkXTrywlJkQwhXNSVcKKXZB1-w3zFBsZyDssFc8PSBuLJPKA1Qzjn9ey4HfPEAtpZhg/exec">
+
+            
+            <div class="form-elements">
+              <div>
+                <h4><i class="fa fa-phone"></i>&nbsp; (+91) 9702785293</button></h4>
+              </div>
+              <div>
+                <h4 class="text-lowercase"><i class="fa fa-envelope-o"></i>&nbsp;
+                  <a href="mailto:dayeem59@gmail.com">dayeem59@gmail.com</a></button></h4><br>
+              </div>
+
+              <label for="name">Name</label><br>
+                <input id="name" name="name" required/><br><br>
+
+              <label for="email">Email Address</label><br>
+                <input id="email" name="email" type="email" value="" required/>
+                <br><div class="opacity-half">Your email will not be shared with anyone</div><br>
+
+              <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+
+              <input id="honeypot" type="text" name="honeypot" value="" />
+              <br><br>
+              <button class="button-success button-xlarge">
+                <i class="fa fa-paper-plane"></i>&nbsp;Send Mail</button>
+            </div>
+            <div id="thankyou_message" style="display:none;">
+              <h2><em>Thanks</em> for contacting!
+              We will get back to you soon!</h2>
+            </div>
+
+          </form>
+
+        </div>
+      </section>
+
     </div>
 
     <script src="external/jquery/jquery.js"></script>
     <script src="external/bootstrap/bootstrap.bundle.js"></script>
     <script src="external/jquery/jquery.easing.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
     <script src="portfMainJS.js"></script>
     <script>
