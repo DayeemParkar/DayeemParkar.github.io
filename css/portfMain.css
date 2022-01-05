@@ -33,20 +33,19 @@ body {
     font-size: 1.5rem; }
   
   .list-social-icons a {
-    color: #495057; }
+    color: #404952; }
     .list-social-icons a:hover {
-      color: #BD5D38; }
+      color: #007bff; }
     .list-social-icons a .fa-lg {
       font-size: 1.75rem; }
   
   .list-icons {
     font-size: 1.35rem; }
     .list-icons .list-inline-item i:hover {
-      color: #BD5D38; }
+      color: #007bff; }
   
   #sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 600;
-    text-transform: uppercase; }
+    font-weight: 600; }
   
   @media (min-width: 992px) {
     #sideNav {
@@ -100,13 +99,57 @@ body {
       padding-top: 3rem !important;
       padding-bottom: 3rem !important; } }
   
-  .bg-primary {
-    background-color: #BD5D38; }
+  .mySlides {
+    display:none; }
+
+  .w3-left, .w3-right, .w3-badge {
+    cursor:pointer; }
+    
+  .w3-badge {
+    height:13px;
+    width:13px;
+    padding:0; }
   
-  .text-primary {
-    color: #BD5D38 !important; }
-  
-  a {
-    color: #BD5D38; }
-    a:hover, a:focus, a:active {
-      color: #824027; }
+    textarea {
+      padding: 1%;
+      width: 100%;
+      border-radius: 10px; }
+
+    input {
+      padding: 1%;
+      border: none;
+      border:solid 1px;
+      border-radius: 5px; }
+
+    .form-elements {
+      text-align: center; }
+
+    .content-head {
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 2em 0 1em; }
+
+    .is-center {
+      text-align: center; }
+
+    .button-success {
+      color: white;
+      border-radius: 4px;
+      background: #007bff; }
+
+    .button-success:hover {
+      cursor: pointer;
+      background: #0059b8; }
+
+    .button-xlarge {
+      font-size: 125%; }
+
+    #name, #email {
+      width: 50%; }
+
+    #honeypot{
+      display: none; }
+
+    .opacity-half {
+      opacity: 0.7; }
