@@ -1,155 +1,210 @@
 body {
     font-family: 'Open Sans', serif;
     padding-top: 54px;
-    color: #868e96; }
-  
-  @media (min-width: 992px) {
+    color: #868e96;
+}
+
+@media (min-width: 992px) {
     body {
-      padding-top: 0;
-      padding-left: 17rem; } }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+        padding-top: 0;
+        padding-left: 17rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Saira Extra Condensed', serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: #343a40; }
-  
-  h1 {
+    color: #343a40;
+}
+
+h1 {
     font-size: 6rem;
-    line-height: 5.5rem; }
-  
-  h2 {
-    font-size: 3.5rem; }
-  
-  .subheading {
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.subheading {
     text-transform: uppercase;
     font-weight: 500;
     font-family: 'Saira Extra Condensed', serif;
-    font-size: 1.5rem; }
-  
-  .list-social-icons a {
-    color: #404952; }
-    .list-social-icons a:hover {
-      color: #007bff; }
-    .list-social-icons a .fa-lg {
-      font-size: 1.75rem; }
-  
-  .list-icons {
-    font-size: 1.35rem; }
-    .list-icons .list-inline-item i:hover {
-      color: #007bff; }
-  
-  #sideNav .navbar-nav .nav-item .nav-link {
-    font-weight: 600; }
-  
-  @media (min-width: 992px) {
+    font-size: 1.5rem;
+}
+
+.list-social-icons a {
+    color: #404952;
+}
+
+.list-social-icons a:hover {
+    color: #007bff;
+}
+
+.list-social-icons a .fa-lg {
+    font-size: 1.75rem;
+}
+
+.list-icons {
+    font-size: 1.35rem;
+}
+
+.list-icons .list-inline-item i:hover {
+    color: #007bff;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+}
+
+@media (min-width: 992px) {
     #sideNav {
-      text-align: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: flex;
-      flex-direction: column;
-      width: 17rem;
-      height: 100vh; }
-      #sideNav .navbar-brand {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+
+    #sideNav .navbar-brand {
         display: flex;
         margin: auto auto 0;
-        padding: 0.5rem; }
-        #sideNav .navbar-brand .img-profile {
-          max-width: 10rem;
-          max-height: 10rem;
-          border: 0.5rem solid rgba(255, 255, 255, 0.2); }
-      #sideNav .navbar-collapse {
+        padding: 0.5rem;
+    }
+
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+
+    #sideNav .navbar-collapse {
         display: flex;
         align-items: flex-start;
         flex-grow: 0;
         width: 100%;
-        margin-bottom: auto; }
-        #sideNav .navbar-collapse .navbar-nav {
-          flex-direction: column;
-          width: 100%; }
-          #sideNav .navbar-collapse .navbar-nav .nav-item {
-            display: block; }
-            #sideNav .navbar-
-             .navbar-nav .nav-item .nav-link {
-              display: block; } }
-  
-  section.resume-section {
+        margin-bottom: auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+
+    #sideNav .navbar- .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+section.resume-section {
     border-bottom: 1px solid #dee2e6;
     background-color: #f3f3f3;
     padding-top: 5rem !important;
-    padding-bottom: 5rem !important; }
+    padding-bottom: 5rem !important;
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none;
+}
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+
     section.resume-section .resume-item .resume-date {
-      min-width: none; }
-  
-  @media (min-width: 768px) {
+        min-width: 18rem;
+    }
+}
+
+@media (min-width: 992px) {
     section.resume-section {
-      min-height: 100vh; }
-      section.resume-section .resume-item .resume-date {
-        min-width: 18rem; } }
-  
-  @media (min-width: 992px) {
-    section.resume-section {
-      padding-top: 3rem !important;
-      padding-bottom: 3rem !important; } }
-  
-  .mySlides {
-    display:none; }
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
 
-  .w3-left, .w3-right, .w3-badge {
-    cursor:pointer; }
-    
-  .w3-badge {
-    height:13px;
-    width:13px;
-    padding:0; }
-  
-    textarea {
-      padding: 1%;
-      width: 100%;
-      border-radius: 10px; }
+.mySlides {
+    display: none;
+}
 
-    input {
-      padding: 1%;
-      border: none;
-      border:solid 1px;
-      border-radius: 5px; }
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer;
+}
 
-    .form-elements {
-      text-align: center; }
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
 
-    .content-head {
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin: 2em 0 1em; }
+textarea {
+    padding: 1%;
+    width: 100%;
+    border-radius: 10px;
+}
 
-    .is-center {
-      text-align: center; }
+input {
+    padding: 1%;
+    border: none;
+    border: solid 1px;
+    border-radius: 5px;
+}
 
-    .button-success {
-      color: white;
-      border-radius: 4px;
-      background: #007bff; }
+.form-elements {
+    text-align: center;
+}
 
-    .button-success:hover {
-      cursor: pointer;
-      background: #0059b8; }
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
 
-    .button-xlarge {
-      font-size: 125%; }
+.is-center {
+    text-align: center;
+}
 
-    #name, #email {
-      width: 50%; }
+.button-success {
+    color: white;
+    border-radius: 4px;
+    background: #007bff;
+}
 
-    #honeypot{
-      display: none; }
+.button-success:hover {
+    cursor: pointer;
+    background: #0059b8;
+}
 
-    .opacity-half {
-      opacity: 0.7; }
+.button-xlarge {
+    font-size: 125%;
+}
+
+#name,
+#email {
+    width: 50%;
+}
+
+#honeypot {
+    display: none;
+}
+
+.opacity-half {
+    opacity: 0.7;
+}
